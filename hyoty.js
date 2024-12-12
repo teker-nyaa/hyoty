@@ -18,3 +18,40 @@ function ajax(data) {
   xhttp.open("GET", data, true);
   xhttp.send();
 }
+
+class hyoty {
+  constructer(el) {
+    switch(el.chartAt(0)) {
+        case: '#':
+          this.el = document.getElementById(el.subString(1));
+          break;
+
+        case: '.':
+          this.el = document.getElementByClassName(el.subString(1));
+          break;
+
+        default:
+        this.el = document.getElementByTagName(el.subString(1));
+    }
+  }
+
+  html(input) {
+    this.el.setHTMLUnsafe(input);
+  }
+  
+  text(input) {
+    this.el.textContent = input;
+  }
+
+  attr(in1, in2) {
+    this.el.setAttribute(in1, in2);
+  }
+
+  anim(in1, in2) {
+    this.el.animate(in1, in2);
+  }
+}
+
+function h(element) {
+  return new hyoty(element);
+}
