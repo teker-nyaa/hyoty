@@ -9,7 +9,7 @@
     <p id="quote" class="quote"></p>
     <script>
       var quotes=["I love ninjas. I don't know any of them persoanlly, but they're really cool", "BOO!", "Ik hatja rumonins", "fwæh", "if John Carmack uses bottom case in every file, is he a bottom?", "y'all ruined vercel", "ea-nasir is my idol", "weis fralsunan jah dishnupnan saiwalos..."];
-      document.getElementById("quote").text(quotes[Math.floor(Math.random() * quotes.length)]);
+      document.getElementById("quote").text = quotes[Math.floor(Math.random() * quotes.length)];
     </script>
     <style>
       body {
