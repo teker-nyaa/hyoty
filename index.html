@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Hyöty</title>
+  </head>
+  <body>
+    <h1>Hyöty</h1>
+    <p id="quote" class="quote"></p>
+    <script>
+      var quotes=["I love ninjas. I don't know any of them persoanlly, but they're really cool", "BOO!", "Ik hatja rumonins", "fwæh", "if John Carmack uses bottom case in every file, is he a bottom?", "y'all ruined vercel", "ea-nasir is my idol", "weis fralsunan jah dishnupnan saiwalos..."];
+      document.getElementById("quote").text(quotes[Math.floor(Math.random() * quotes.length)]);
+    </script>
+    <style>
+      body {
+        color: #fef;
+        background-color: #1f1;
+        font-family: sans-serif;
+      }
+    </style>
+  </body>
+</html>
