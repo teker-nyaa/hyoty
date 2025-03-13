@@ -1,0 +1,16 @@
+body {
+    color: #fef;
+    background-color: #111;
+}
+
+#content {
+    font-size: 13pt;
+}
+
+#header {
+    text-align: center;
+}
+
+.quote {
+    font-style: italic;
+}

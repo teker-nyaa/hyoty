@@ -11,16 +11,25 @@
     <body>
         <div id="content">
             <div id="header">
-                <h1>Hyöty</h1>
+                <h1>Flash</h1>
                 <p id="quote" class="quote"></p>
             </div>
-            <p>Welcome to Hyöty.</p>
-            <p>We host games.</p>
+            <object width="720" height="480">
+                <param id="abc" name="movie" value="game.swf">
+                <embed id="edu" src="" width="720" height="480">
+                </embed>
+            </object>
             <div id="footer">
                 <p><a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy</a> | <a href="tos.html" target="_blank" rel="noopener noreferrer">Terms of service</a></p>
                 <p>Ellie Putnam © 2025-</p>
                 <p>MediaApe © 2025</p>
             </div>
         </div>
+        <script>
+            const params = new URLSearchParams(document.location.search);
+            const edu = atob(params.get("g"));
+            $("#edu").attr("src") = `edu/swf/${edu}`;
+            $("#edu").attr("value") = `edu/swf/${edu}`;
+        </script>
     </body>
 </html>
